@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="./assets/js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="./assets/js/hamburger.js"></script>
+  <title>single</title>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="titleWrap">
+        <a href="index.html">
+          <h1 class="logo">
+            <img src="./assets/img/header_logo.png" alt="PIX TECH BLOG">
+          </h1>
+          <p class="subTitle spNone">
+            未経験からエンジニアを目指す!
+          </p>
+        </a>
+      </div>
+      <nav>
+        <ul class="list">
+          <li><a href="article.html">記事一覧</a></li>
+          <li><a href="admin.html">運営者情報</a></li>
+          <li><a href="contact_form.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger pcNone">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="article.html">記事一覧</a></li>
+          <li><a href="admin.html">運営者情報</a></li>
+          <li><a href="contact_form.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="wrap singlePage">
+    <main class="container">
+      <article>
+        <div class="jumbotron">
+          <a href="">
+            <div class="titleWrap">
+              <p class="date">
+                2019.01.01
+              </p>
+              <p class="description">
+                React.jsの知識のなかった自分が、大手ベンチャーで業務を行えるようになるまでの勉強方法
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="postWrap">
+          <p class="postText">
+            こんにちは、代表の浪岡です。<br><br>
+            近年とてもニーズがあると言われているreact.jsですが、自分も半年ほど前に大手ベンチャー企業から頂いたお仕事でメインの開発言語がreact.jsだった為その時から初めて勉強していくことになりました。<br><br>
+            実際に自分が業務にあたっていく中で、流行っているとはいえど、参考になるHPや書籍が少なく勉強にとても苦労したのですが1ヶ月ほどでなんとか自分も中心メンバーとしての開発が行えるようになりました。<br><br>
+            そこで今回は自分もまだまだ勉強しなければいけないことが多いですが、
+            現状の自分の知識でざっくりとreact.jsの説明と、自分が業務がこなせるようになったまでの参考にさせてもらったページのご紹介をさせていただければと思います。
+          </p>
+          <h3>
+            React.jsとは？
+          </h3>
+          <p class="postText">
+            ・差分のあるDOMのみが更新されるので描画が速い<br>
+            React.jsの特徴の一つにVertualDOMと呼ばれるものがあり、更新される前と後で変更が見られた場合は更新をかけるのですが、変更がない場合は更新を行わない為、更新箇所のみの描画が行われる為負荷も少なく結果的に描画スピードが速くなります。<br><br>
+            ・Javascriptのフレームワークなので学習コストが低い<br>
+            前述の通りReact.jsはJavaScriptのフレームワークなので、React.jsの仕組みと構造を理解すればすぐにでも開発に取りかかることが可能です。
+          </p>
+        </div>
+      </article>
+      <div class="tagWrap">
+        <h3 class="heading">Tags</h3>
+        <ul class="tags">
+          <li class="tag">
+            <a href="">tag1</a>
+          </li>
+          <li class="tag">
+            <a href="">tag2</a>
+          </li>
+          <li class="tag">
+            <a href="">tag3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="share">
+        <h3 class="heading">記事をシェアする</h3>
+        <div class="shareWrap">
+          <p class="facebook">
+            <a href="" class="btn">
+              <i class="fab fa-facebook-f ">
+                <span>
+                  シェアする
+                </span>
+              </i>
+            </a>
+          </p>
+          <p class="twitter">
+            <a href="">
+              <i class="fab fa-twitter btn">
+                <span>
+                ツイートする
+                </span>
+              </i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <aside class="sidebar sidebarIndex">
+      <div class="sidebarWrap">
+        <section class="latestArticle">
+          <h3 class="heading">Latest Article</h3>
+          <div class="postWrap">
+            <div class="articlePost">
+              <a href="">
+                <p class="image thumbnail3"></p>
+                <div class="info">
+                  <p class="date">2019.01.01</p>
+                  <p class="description">React.jsの知識のなかった自分が、大手ベンチャーで</p>
+                </div>
+              </a>
+            </div>
+            <div class="articlePost">
+              <a href="">
+                <p class="image thumbnail1"></p>
+                <div class="info">
+                  <p class="date">2019.01.01</p>
+                  <p class="description">ホームページに効果をつける！JQueryプラグインの</p>
+                </div>
+              </a>
+            </div>
+            <div class="articlePost">
+              <a href="">
+                <p class="image thumbnail2"></p>
+                <div class="info">
+                  <p class="date">2019.01.01</p>
+                  <p class="description">WEBの勉強にオススメ！WEBに関する知識がまと</p>
+                </div>
+              </a>
+            </div>
+            <div class="articlePost">
+              <a href="">
+                <p class="image thumbnail2"></p>
+                <div class="info">
+                  <p class="date">2019.01.01</p>
+                  <p class="description">WEBの勉強にオススメ！WEBに関する知識がまと</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="joinUs">
+          <h3 class="heading">Join Us</h3>
+          <p class="image">
+            <a href="">
+              <img src="./assets/img/recruit_link.jpg" alt="採用情報はこちら">
+            </a>
+          </p>
+        </section>
+        <section class="sidebarTags">
+          <h3 class="heading">Tags</h3>
+          <ul class="tags">
+            <li class="tag">
+              <a href="">tag1</a>
+            </li>
+            <li class="tag">
+              <a href="">tag2</a>
+            </li>
+            <li class="tag">
+              <a href="">tag3</a>
+            </li>
+            <li class="tag">
+              <a href="">tagtagtag1</a>
+            </li>
+            <li class="tag">
+              <a href="">tagtagtag2</a>
+            </li>
+            <li class="tag">
+              <a href="">tagtagtag3</a>
+            </li>
+            <li class="tag">
+              <a href="">tag1</a>
+            </li>
+            <li class="tag">
+              <a href="">tag2</a>
+            </li>
+            <li class="tag">
+              <a href="">tag3</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="reccomendArticle">
+        <h3 class="heading">Reccomend Article</h3>
+        <div class="post">
+          <a href="">
+            <p class="image thumbnail2">
+            </p>
+            <p class="date">2019.01.01</p>
+            <p class="description">ホームページに効果をつける！JQueryプラグインの紹介とオススメプラグイン…</p>
+          </a>
+          <ul class="tags">
+            <li class="tag">
+              <a href="">tag1</a>
+            </li>
+            <li class="tag">
+              <a href="">tag2</a>
+            </li>
+            <li class="tag">
+              <a href="">tag3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="post">
+          <a href="">
+            <p class="image thumbnail2">
+            </p>
+            <p class="date">2019.01.01</p>
+            <p class="description">ホームページに効果をつける！JQueryプラグインの紹介とオススメプラグイン…</p>
+          </a>
+          <ul class="tags">
+            <li class="tag">
+              <a href="">tag1</a>
+            </li>
+            <li class="tag">
+              <a href="">tag2</a>
+            </li>
+            <li class="tag">
+              <a href="">tag3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="post">
+          <a href="">
+            <p class="image thumbnail2">
+            </p>
+            <p class="date">2019.01.01</p>
+            <p class="description">ホームページに効果をつける！JQueryプラグインの紹介とオススメプラグイン…</p>
+          </a>
+          <ul class="tags">
+            <li class="tag">
+              <a href="">tag1</a>
+            </li>
+            <li class="tag">
+              <a href="">tag2</a>
+            </li>
+            <li class="tag">
+              <a href="">tag3</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+  <footer class="footerIndex">
+    <div class="inner">
+      <p class="image">
+        <img src="./assets/img/footer_logo.png" alt="PIXTECH BLOG">
+      </p>
+      <div class="links">
+        <p>
+          <a href="article.html">
+            記事一覧
+          </a>
+        </p>
+        <p>
+          <a href="admin.html">
+            運営者情報
+          </a>
+        </p>
+        <p>
+          <a href="contact_form.html">
+            お問い合わせ
+          </a>
+        </p>
+      </div>
+      <p class="copylight">
+        ©︎ 2019 PIXEL HEARTS.inc
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

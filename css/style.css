@@ -11,10 +11,6 @@ body {
 
 .inner {
   display: flex;
-  justify-content: space-between;
-  max-width: 1020px;
-  width: 96%;
-  margin: auto;
 }
 
 .contents .topPost {
@@ -40,6 +36,20 @@ body {
   align-items: center;
 }
 
+.contents .post {
+  width: 305px;
+  margin-bottom: 30px;
+}
+
+.contents .post .date,
+.contents .post .description {
+  margin-top: 15px;
+}
+
+.contents .post:nth-child(2n) {
+  margin-left: 30px;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -51,29 +61,25 @@ img {
   background-position: center;
 }
 
-.btn {
-  text-align: center;
-  border-radius: 8px;
-  color: #fff;
-  background-color: #f3bf27;
-  padding: 0 20px;
-  font-size: 12px;
-}
-
-.tag {
+.tags {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.container .tag li+li {
-  margin-left: 10px;
+.tag {
+  text-align: center;
+  border-radius: 9999px;
+  color: #fff;
+  background-color: #f3bf27;
+  padding: 0 15px;
+  font-size: 12px;
+  max-width: 90px;
+  margin-bottom: 10px;
 }
 
-
-/*container*/
-.container {
-  margin-top: 30px;
+.container .tags .tag {
+  margin-right: 10px;
 }
 
 /*header*/
@@ -114,40 +120,37 @@ header .toggle {
   display: none;
 }
 
-/*contents*/
-.container .contents{
-  max-width: 640px;
+/*container*/
+.container {
+  max-width: 1020px;
+  margin: auto;
 }
 
+.container .inner {
+  margin-top: 30px;
+}
 
+/*contents*/
+.container .contents{
+}
 
+/*postWrap*/
 .container .contents .postWrap {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
 }
 
-.container .contents .post {
-  width: 305px;
-  margin-bottom: 30px;
-}
-
-.container .contents .post .date,
-.container .contents .post .description {
-  margin-top: 15px;
-}
-
-.container .contents .post:nth-child(2n) {
-  margin-left: 30px;
-}
-
 /*sidebar*/
 .container .sidebar{
-  background-color: #f9f9f9;
-  height: 616px;
   width: 320px;
   font-size: 14px;
   margin-left: 60px;
+}
+
+.container .sidebarWrap {
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .container .sidebar .heading {
@@ -157,10 +160,6 @@ header .toggle {
   font-size: 18px;
   padding: 0 0 20px;
   font-weight: 600;
-}
-
-.container .sidebarWrap {
-  padding: 20px;
 }
 
 .container .sidebarWrap section {
@@ -195,11 +194,73 @@ header .toggle {
 }
 .container .sidebar .tag {
   margin-top: 0;
-
 }
 
 .container .sidebar .btn:nth-child(3n+1) {
   margin-left: 0;
+}
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+}
+
+footer .inner {
+  height: 176px;
+
+  padding: 20px 0;
+  flex-direction: column;
+}
+
+footer .image{
+  width: 252px;
+  margin: auto;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+footer .copylight {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+footer .links p+p {
+  margin-left: 20px;
+}
+
+/*=====1024px以下で切り替え=====*/
+@media (max-width: 1024px) {
+  header nav{
+    display: none;
+  }
+
+  header .toggle{
+    display: block;
+  }
+
+  .container .inner{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .sidebar{
+    margin-left: 0;
+  }
+
+  .container .sidebar .postWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contents .post {
+    width: calc(50% - 15px);
+  }
 
 }
 
